@@ -1,0 +1,28 @@
+//shouldn't have a main. will get a main error
+package javaclassweek8;
+public class PetSold extends ItemSold 
+{
+    //3 boolean methods
+    private boolean vac;
+    private boolean neut;
+    private boolean house;
+    
+    //can use the constructor without the getter and setter
+    
+    public PetSold(int i, String d, double p, boolean v, boolean n, boolean h) //this construcotr has 6 parameters
+    {
+        super(i, d, p);
+        vac = v;   //constuctors
+        neut = n;
+        house = h;
+    }
+
+    //display
+    public void Display()
+    {
+        super. Display(); //calls from the parent
+        System.out.println("Vaccinated " + vac);
+        System.out.println("Neutered " + neut);
+        System.out.println("HouseBroken " + house);
+    }
+}
