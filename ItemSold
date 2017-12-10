@@ -1,0 +1,27 @@
+//shouldn't have a main. will get a main error
+package javaclassweek8;
+public class ItemSold 
+{   
+    //variables all lowercase
+    private int invoice;
+    private String desc;
+    private double price;
+
+    public ItemSold(int i, String d, double p) //constructor 3 parameters
+    {
+        invoice = i;
+        desc = d;
+        price = p;
+    }
+    
+    //can have getters and setters
+    
+    //display
+    public void Display()
+    {
+        //display in its own line
+        System.out.println("Item invoice is " + invoice);
+        System.out.println("Description: " + desc);
+        System.out.println("Price " + price );
+    }
+}
