@@ -1,0 +1,41 @@
+package javaclassweek8;
+public class package javaclassweek8;
+public class TestPackage 
+{
+    public static void main(String[] args) 
+    {
+        //First Package
+        Package P1 = new Package(6, 'T'); //tell only 2 things and the constructor will calculate the cost
+        Package P2 = new Package(20, 'M');
+        
+        P1.Display();
+        P2.Display();
+        
+        //Insured Package
+        InsuredPackage P3 = new InsuredPackage(10, 'A');
+        InsuredPackage P4 = new InsuredPackage(9, 'T');
+        
+        P3.Display();
+        P4.Display();
+        
+    }
+} 
+{
+    public static void main(String[] args) 
+    {
+        //First Package
+        Package P1 = new Package(6, 'T'); //tell only 2 things and the constructor will calculate the cost
+        Package P2 = new Package(20, 'M');
+        
+        P1.Display();
+        P2.Display();
+        
+        //Insured Package
+        InsuredPackage P3 = new InsuredPackage(10, 'A');
+        InsuredPackage P4 = new InsuredPackage(9, 'T');
+        
+        P3.Display();
+        P4.Display();
+        
+    }
+}
