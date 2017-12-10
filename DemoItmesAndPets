@@ -1,0 +1,19 @@
+//Will have a Main
+package javaclassweek8;
+public class DemoItmesAndPets 
+{
+    public static void main(String[] args) 
+    {
+        //pets
+        PetSold Cat = new PetSold(34, " Cat called Fluffy ", 250.99, true,true,true);  //name of the class and the consturctors (types)
+        PetSold Dog = new PetSold (35, " Dog call Mickey ", 400, true, true, false);  //with 6 fields
+        
+        ItemSold Mat = new ItemSold(35, "Big Dog Bed", 50.99);  //3 parameters
+        ItemSold Cage = new ItemSold(37, "Bird Cage", 55.67);   
+        
+        Cat.Display();  //info about the cat
+        Dog.Display();  //about the dog
+        Mat.Display();  //about the mat
+        Cage.Display(); //about the cage       
+    }
+}
