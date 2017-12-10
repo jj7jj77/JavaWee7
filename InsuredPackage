@@ -1,0 +1,24 @@
+package javaclassweek8;
+public class InsuredPackage extends Package  //child of Package
+{
+    //variables
+    private double extra; 
+    
+   //constructor with 4 parameters, 2 from package, 1 calculated and 1(extra) from here with if statements
+    public InsuredPackage( int w, char m)
+    {
+        super (w,m); //parent will calculate cost auto
+        if (super.cost < 1)  //child calculates the extra
+            extra = 2.45;
+        else if (super.cost >=1 && super.cost <3)
+            extra = 3.95;
+        else 
+            extra = 5.55;
+    }
+    
+    public void Dispay()
+    {
+        super.Display();
+        System.out.println("Extra cost is " + extra);
+    }
+}
