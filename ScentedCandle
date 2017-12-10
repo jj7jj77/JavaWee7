@@ -1,0 +1,27 @@
+package javaclasshomework8;
+public class ScentedCandle extends Candle
+{
+    private String scent;
+
+    public ScentedCandle(String c, double h, double p, String s)
+    {
+        super(c,h,p);
+        scent = s;
+    } 
+    
+    public String getScent() {return scent;}  //getter
+    public void setScent(String s) {scent = s;} //setter
+
+@Override
+    public void setHeight(double height)
+    {
+        super.setHeight(height);
+        super.price = getHeight()* 3;
+    }
+    
+    public void Display()
+    {
+        super.Display();
+        System.out.println("The scented candle has a " + scent + " scent");
+    }
+}
