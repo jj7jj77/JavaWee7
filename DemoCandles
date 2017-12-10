@@ -1,0 +1,25 @@
+package javaclasshomework8;
+public class DemoCandles 
+{
+    public static void main(String[] args) 
+    {
+        Candle Rose = new Candle("Red", 7, 0);
+        Rose.setColor("Red");
+        Rose.setHeight(7);
+        //Rose.setPrice(7.00);  //wasn't asked to set the price...it's determinded by the height
+        
+        ScentedCandle Purple = new ScentedCandle("Purple", 12, 0, "Lavendar");
+        Purple.setColor("Purple");
+        Purple.setHeight(12);
+        //Purple.setPrice(12.00);  wasn't asked to set the price...it's determined by the height
+        Purple.setScent("Lavendar");
+        
+        System.out.println("Candle 1");
+            Rose.Display();
+            
+        System.out.println();
+        
+        System.out.println("Candle 2");
+            Purple.Display();
+    }
+}
