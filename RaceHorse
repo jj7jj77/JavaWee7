@@ -1,0 +1,19 @@
+package javaclassweek7:
+public class RaceHorse extends Horses  //use extends  //this is a child of a parent 
+{
+    private int races;  //holds the num of races
+    public RaceHorse(String n, String c, int y, int r)    //constructor with 4 parameters
+    {
+        super(n,c,y);  //calling the constructor of the father send the first three varaible to the constucor to the parent  //constructor of the child  // sending the string n from the child to the parent
+        races = r;  //goes in the races
+    }
+    
+    public int getRaces() {return races;}  //get method of the races
+    public void setRaces(int r) {races = r;}  //set method of the races
+    
+    public void Display() //the child
+    {
+        super.Display(); //calll the other dsiplay of the parent who is Horses
+        System.out.println("It ran " + races + " races");  //adding own string
+    }
+}
