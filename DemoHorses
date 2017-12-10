@@ -1,0 +1,35 @@
+//adding a few more horses to this problem question
+//constructors replaced the setters
+//displays replaced the getters
+package javaclassweek8;
+public class DemoHorses 
+{
+    public static void main(String[] args) 
+    {
+        //first horse, regular horse, not racing horse put constructors in the new horse(in here 3 setters (to repalce)
+        Horses Champ = new Horses("Champ", "White", 2002);  //of type horses //no constructor (no name, color, year) //had to use all the getters
+        //3 setters--> this all goes into the new horses(3 setters)
+        //Champ.setName("Champ");
+        //Champ.setColor("White");
+        //Champ.setYear(2002);
+        
+              
+        //Race horse
+        RaceHorse Speedy = new RaceHorse("Speedy", "Brown", 2010, 10);//of type race horse  // put 4 parameters in Racehorse(in here)
+        //4 setters (racehorse along with name, color, year  --> this all goes into the new Racehorses(3 setters)
+        //Speedy.setName("Speedy");
+        //Speedy.setColor("Brown");
+        //Speedy.setYear(2010);
+        //Speedy.setRaces(10);// how many races he ran
+        
+        System.out.println("Horse 1");
+       //System.out.println("First Horse: " + Champ.getName() + " " + Champ.getColor() + " " + Champ.getYear());
+         //replacing this(^) with:
+            Champ.Display(); //calls the display from the parent with the 3 lines of horse description
+            
+       System.out.println("Horse 2");
+       //System.out.println("Second Horse: " + Speedy.getName() + " " + Speedy.getColor() + " " + Speedy.getYear() + " " + Speedy.getRaces());
+       //replacing this (^) with:
+            Speedy.Display();
+    }
+}
