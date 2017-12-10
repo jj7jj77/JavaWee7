@@ -1,0 +1,37 @@
+//3 getters and 3 setters, total 6 methods
+//variable,
+//constructors
+//getters
+//setters
+package javaclassweek7;
+public class Horses 
+{
+    private String name;
+    private String color;
+    private int birthyear;
+    
+    public Horses(String n, String c, int y) //constructor:combined into one same name as class: 3 parameters.. some will have 0 or 1-3
+    {
+        name = n;
+        color = c;
+        birthyear = y;
+    }
+    
+    //getters
+    public String getName() {return name;}
+    public String getColor() {return color;}
+    public int getYear() {return birthyear;}    
+    
+    //setters
+    public void setName(String n){ name = n;}
+    public void setColor(String c){ color = c;}
+    public void setYear(int y){ birthyear = y;}
+    
+    //display
+    public void Display() // prints out the varibles: the display of the parent
+    {
+        System.out.println("Horse name is " + name);
+        System.out.println("Horse color is " + color);
+        System.out.println("Horse was born in " + birthyear);
+    }
+}
