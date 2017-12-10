@@ -1,0 +1,53 @@
+package javaclassweek8;
+public class Package 
+{
+   //variables
+    private int weight;
+    private char method; //shipping method is a character
+    protected double cost; //make protected
+    
+    public Package(int w, char m) //2 parameters the cost will be calculated by the constructor
+    {
+        weight = w;
+        method = m;
+        cost = CalculateCost(w,m); //calculate cost is a method and how you want to send it
+    }
+    
+    public double CalculateCost(int w, char m) //constuctor. has if statments with 
+    {
+        if (w >=1 && w <=8) //first case
+        {
+            //can use some if and switch
+            { 
+                if (m== 'A') return 2.00;
+                else if (m =='T') return 1.50;
+                else return 0.5;
+            }
+        }
+        else if (w>=9 && w<=16)  //secodn case
+        {
+            {
+                if (m== 'A') return 3.00;
+                else if (m =='T') return 2.35;
+                else return 1.5;
+            }
+        }
+        else  if (w >17)  //third case
+        {
+            {
+                if (m== 'A') return 4.50;
+                else if (m =='T') return 3.25;
+                else return 2.15;
+            }
+        }
+       return 0;
+    }
+    
+     public void Display()
+        {
+           //3 variables
+            System.out.println("Weight is " + weight);
+            System.out.println("The method is " + method);
+            System.out.println("The cost is " + cost);
+        }
+}
