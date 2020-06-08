@@ -1,2 +1,2 @@
-# JavaWeek7
+# JavaWeek8
 Classwork and Homework
